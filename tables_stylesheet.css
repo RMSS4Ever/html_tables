@@ -1,0 +1,70 @@
+<head>
+<style>
+
+  h2
+  {
+    font-style: oblique;
+  }
+
+  h1
+  {
+    font-style: italic;
+    color: green;
+
+  }
+
+  td
+  {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+
+  }
+
+  th
+  {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+  }
+
+  table.a
+  {
+    table-layout: auto;
+    width: 180px;
+
+  }
+
+  table.b
+  {
+    table-layout: auto;
+    width: 280px;
+
+  }
+
+  table.c
+  {
+    table-layout: auto;
+    width: 100px;
+
+  }
+
+  table.d
+  {
+    table-layout: fixed;
+    width: 100px;
+
+  }
+
+  tr
+  {
+    table-layout: auto;
+    width: 180px;
+
+  }
+
+
+
+</style>
+</head>

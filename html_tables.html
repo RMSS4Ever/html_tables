@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" type="text/css" href="./tables_stylesheet.css">
+
+<!--
+<style>
+
+  table, th
+  {
+    border: 1px solid black;
+    border-collapse: collapse;
+
+  }
+
+  td
+  {
+    border: 1px solid red;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+  }
+
+  table.a
+  {
+    table-layout: auto;
+    width: 180px;
+  }
+
+  table.b
+  {
+    table-layout: fixed;
+    width: 180px;
+  }
+
+  table.c
+  {
+    table-layout: auto;
+    width: 100%;
+  }
+
+  table.d
+  {
+    table-layout: fixed;
+    width: 100%;
+  }
+
+</style>
+-->
+
+</head>
+
+<body>
+
+    <h1>This is a test of the tables_stylesheet. Carrry on.</h1>
+    <h2> Cell spanning three columns</h2>
+    <p>To make a cell span more than one column, use the colspan attribute.</p>
+
+    <!-- HTML Table - Cells that span many columns -->
+<!--
+    <table style="width:100%">
+-->
+    <table class="a">
+        <tr>
+          <th>BOT</th>
+          <th>Nbr of Shares</th>
+          <th>Hard Stop</th>
+          <th>Stop Loss</th>
+          <th colspan="5">Break Even</th>
+        </tr>
+
+        <tr>
+          <th>7:00</th>
+            <td rowspan="2">Opera Fest</td>
+            <td rowspan="2">Radio U</td>
+            <td rowspan="2">Science Week</td>
+            <td rowspan="2">The Living World</td>
+            <td>Word Play</td>
+            <td>Agri-Week</td>
+            <td rowspan="2">Folk Fest</td>
+        </tr>
+        <tr>
+          <th>7:30</th>
+            <td>Brain Stew</td>
+            <td>Bismark Forum</td>
+        </tr>
+
+        <tr>
+          <td>Bill Gates</td>
+          <td>55577854</td>
+          <td>55577855</td>
+          <td>Cell 3</td>
+          <td>Cell 4</td>
+          <td>Cell 5</td>
+          <td>Cell 6</td>
+          <td>Cell 7</td>
+        </tr>
+    </table>
+
+    <h1>Trade Calculator tests</h1>
+    <h2>Testing/playing with my Trade Calculator now</h2>
+
+    <table class "a">
+      <tr>
+        <th>Price</th>
+        <th>Nbr of Shares</th>
+        <th>Hard Stop</th>
+        <th>Stop Loss</th>
+        <th>Break Even</th>
+      </tr>
+      <tr>
+        <td><input id="price" type="number" min=".10" onchange="computeTrade()"></td>
+        <td><id="price" type="number"></td>
+        <td><id="hard_stop" type="number"></td>
+        <td><id="stop_loss" type="number"></td>
+        <td><id="break_even" type="number"></td>
+      </tr>
+      <p>Bank $<input id="bank" type="number" min=".10" onchange="computeTrade()"></p>
+      <p>Commission $<input id="commission" type="number" value="6.95" step=".01" onchange="computeTrade()"></p>
+      <p>Fee $<input id="fee" type="number" value="0.01" step=".01" onchange="computeTrade()"></p>
+      <p>Max Loss $<input id="max_loss" type="number" value="50.00" step="1.0" onchange="computeTrade()"></p>
+
+      <br/>
+      <br/>
+
+      <tr>
+        <th>$5</th>
+        <th>$10</th>
+        <th>$15</th>
+        <th>$20</th>
+        <th>$25</th>
+        <th>$50</th>
+        <th>$100</th>
+      </tr>
+        <td><id="five_dollar" type="number"></td>
+        <td><id="ten_dollar" type="number"></td>
+        <td><id="fifteen_dollar" type="number"></td>
+        <td><id="twenty_dollar" type="number"></td>
+        <td><id="twentyFive_dollar" type="number"></td>
+        <td><id="fifty_dollar" type="number"></td>
+        <td><id="hundred_dollar" type="number"></td>
+      </tr>
+
+</body>
+</html>
